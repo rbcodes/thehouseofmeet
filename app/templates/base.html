@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The House of Meet</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <span class="logo-text">The House of Meet</span>
+        </div>
+        <nav class="nav">
+            <a href="#services">Services</a>
+            <a href="#approach">Approach</a>
+            <a href="#engagement">Engagement</a>
+            <a href="#contact" class="nav-cta">Start a Conversation</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <div class="footer-logo">The House of Meet</div>
+            <p class="footer-tagline">Enterprise Technology Services</p>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2024 The House of Meet. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
