@@ -864,8 +864,13 @@ body {
     }
     
     .contact-link {
-        font-size: 1.25rem;
-        padding: 1.25rem 1.75rem;
+        font-size: 1.1rem;
+        padding: 1rem 1.25rem;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+        word-break: break-all;
+        justify-content: center;
     }
     
     .footer-content {
@@ -873,4 +878,32 @@ body {
         gap: 2rem;
         text-align: center;
     }
+
+    .hero-visual {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .visual-card {
+        position: relative;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        animation: none;
+        transform: none !important;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+
 }
